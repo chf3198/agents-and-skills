@@ -1,0 +1,35 @@
+{
+  "name": "agents-and-skills",
+  "version": "1.0.0",
+  "description": "Reusable agent skills and role configurations for GitHub Copilot and Claude Code",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "test": "node --test tests/**/*.test.js",
+    "validate:skills": "node scripts/validate-skills.js",
+    "index:skills": "node scripts/index-skills.js",
+    "lint:md": "markdownlint-cli2 '**/*.md' '!node_modules/**' '!dist/**'",
+    "scan:secrets": "bash scripts/scan-secrets.sh",
+    "preflight": "npm run validate:skills && npm run scan:secrets && npm test"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "^0.14.0",
+    "yaml": "^2.4.5"
+  },
+  "keywords": [
+    "agent-skills",
+    "claude-code",
+    "github-copilot",
+    "SKILL.md",
+    "AGENTS.md",
+    "ai-agents",
+    "llm-tools"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chf3198/agents-and-skills.git"
+  }
+}
