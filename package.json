@@ -15,7 +15,7 @@
     "preflight": "npm run validate:skills && npm run scan:secrets && npm test"
   },
   "devDependencies": {
-    "markdownlint-cli2": "^0.14.0",
+    "markdownlint-cli2": "^0.24.0",
     "yaml": "^2.4.5"
   },
   "keywords": [
